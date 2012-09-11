@@ -8,14 +8,21 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="<?php echo base_url()?>_assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>bootstrap/css/bootstrap.css" rel="stylesheet">
     <style type="textcss">
       body {
         padding-top: 60px;
         padding-bottom: 40px;
       }
     </style>
-    <link href="<?php echo base_url()?>_assets/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="<?php echo base_url()?>bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <script type="text/javascript" src="<?php echo base_url()?>/js/jquery.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>/js/bootstrap-dropdown.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>/js/bootstrap.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>/js/bootstrap-min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url()?>/js/bootstrap-alert.js"></script>
+
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -67,7 +74,7 @@
       <div class="container-fluid">
       	<div class="row-fluid">
       		<div class="span3">
-	          <img src="<?php echo base_url()?>_assets/bootstrap/img/tlogo.jpg">
+	          <img src="<?php echo base_url()?>/bootstrap/img/tlogo.jpg">
 	          <hr class="span10">
 	        </div>
       		<div class=" span9 ">
@@ -80,8 +87,14 @@
 	            <li><a href="<?php echo site_url();?>/auth/login">login</a> <span class="divider">/</span></li>
 	            <li><a href="#">Library</a> <span class="divider">/</span></li>
 	            <li><a href="#">Library</a> <span class="divider">/</span></li>
-	            <li><a href="#">Library</a> <span class="divider">/</span></li>
+	            <li><a href="#">about us</a> <span class="divider">/</span></li>
 	            <li class="active">Data</li>
           	</ul>
            <hr class="span9">
         </div>
+        <script type="text/javascript">
+        $(document).ready(function(){
+  
+  		alert("hello");
+		});
+        </script>

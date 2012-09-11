@@ -4,7 +4,7 @@
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span2">
-          <img src="<? echo base_url()?>_assets/bootstrap/img/tlogo.jpg">
+          <img src="<?php echo base_url()?>_assets/bootstrap/img/tlogo.jpg">
         </div>
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="span10">

@@ -105,8 +105,9 @@ class Auth extends CI_Controller
 				} else {
 					$data['captcha_html'] = $this->_create_captcha();
 				}
-			}
-			$this->load->view('auth/login_form', $data);
+			}$page="layout";
+		$this->layout('auth/login_form',$data);
+			// $this->load->view('auth/login_form', $data);
 		}
 	}
 
@@ -120,6 +121,8 @@ class Auth extends CI_Controller
 		$this->tank_auth->logout();
 
 		$this->_show_message($this->lang->line('auth_message_logged_out'));
+		$page="layout";
+		$this->layout($page);
 	}
 
 	/**
