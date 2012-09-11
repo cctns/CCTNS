@@ -18,20 +18,16 @@ class Auth extends CI_Controller
 		if ($message = $this->session->flashdata('message')) {
 			$this->load->view('auth/general_message', array('message' => $message));
 		} else {
-			redirect('/auth/login/');
+			redirect('auth/login');
 		}
 	}
 
-	function layout($page)
+	function layout($page,$data)
 	{
-		// $pg=$page;
-		
-		// echo "hello";
-		// die;
 		
 		$this->load->view('templates/header');
 		$this->load->view('templates/sidebar');
-		// $this->load->view($page);
+		$this->load->view($page,$data);
 		$this->load->view('templates/footer');
 
 	}
@@ -106,7 +102,7 @@ class Auth extends CI_Controller
 					$data['captcha_html'] = $this->_create_captcha();
 				}
 			}
-			$this->load->view('auth/login_form', $data);
+			$this->layout('auth/login_form', $data);
 		}
 	}
 
