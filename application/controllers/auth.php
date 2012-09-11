@@ -11,6 +11,7 @@ class Auth extends CI_Controller
 		$this->load->library('security');
 		$this->load->library('tank_auth');
 		$this->lang->load('tank_auth');
+		$this->load->library('layout');
 	}
 
 	function index()
@@ -22,19 +23,7 @@ class Auth extends CI_Controller
 		}
 	}
 
-	function layout($page)
-	{
-		// $pg=$page;
-		
-		// echo "hello";
-		// die;
-		
-		$this->load->view('templates/header');
-		$this->load->view('templates/sidebar');
-		// $this->load->view($page);
-		$this->load->view('templates/footer');
-
-	}
+	
 
 	/**
 	 * Login user on the site
@@ -105,9 +94,8 @@ class Auth extends CI_Controller
 				} else {
 					$data['captcha_html'] = $this->_create_captcha();
 				}
-			}$page="layout";
-		$this->layout('auth/login_form',$data);
-			// $this->load->view('auth/login_form', $data);
+			}
+			$this->layout->show('auth/login_form', $data);
 		}
 	}
 

@@ -95,6 +95,6 @@
         <script type="text/javascript">
         $(document).ready(function(){
   
-  		alert("hello");
+  		// alert("hello");
 		});
         </script>

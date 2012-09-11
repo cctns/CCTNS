@@ -9,19 +9,19 @@ class Cctns extends CI_Controller
 		$this->load->helper('url');
 		$this->load->library('tank_auth');
 	}
-	function layout($page)
-	{
-		// $pg=$page;
+	// function layout($page)
+	// {
+	// 	// $pg=$page;
 		
-		// echo "hello";
-		// die;
+	// 	// echo "hello";
+	// 	// die;
 		
-		$this->load->view('templates/header');
-		$this->load->view('templates/sidebar');
-		// $this->load->view($page);
-		$this->load->view('templates/footer');
+	// 	$this->load->view('templates/header');
+	// 	$this->load->view('templates/sidebar');
+	// 	// $this->load->view($page);
+	// 	$this->load->view('templates/footer');
 
-	}
+	// }
 
 	function index()
 	{
@@ -36,8 +36,9 @@ class Cctns extends CI_Controller
 		// 	$data['username']	= $this->tank_auth->get_username();
 		// 	$this->load->view('welcome', $data);
 		// }
-		$page="layout";
-		$this->layout($page);
+		// $page="layout";
+		// $this->layout($page);
+		$this->layout->show('welcome');
 	}
 }
 
