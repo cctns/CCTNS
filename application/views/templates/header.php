@@ -67,7 +67,7 @@
       <div class="container-fluid">
       	<div class="row-fluid">
       		<div class="span3">
-	          <img src="<? echo base_url()?>_assets/bootstrap/img/tlogo.jpg">
+	          <img src="<?php echo base_url()?>_assets/bootstrap/img/tlogo.jpg">
 	          <hr class="span10">
 	        </div>
       		<div class=" span9 ">
