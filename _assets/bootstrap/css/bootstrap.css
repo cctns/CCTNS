@@ -5772,3 +5772,6 @@ a.badge:hover {
 .affix {
   position: fixed;
 }
+#page_head{
+  padding: 46px;
+}

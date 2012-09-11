@@ -1,5 +1,6 @@
-        <footer>
-            <p>&copy; Company 2012</p>
+        <hr>
+        <footer class="pull-right">
+            <p>&copy; <b>CCTNS</b> - Crime and Criminal Tracking Network & System 2012</p>
         </footer>
 
     </div> <!-- /container -->

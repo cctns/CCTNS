@@ -41,40 +41,47 @@
 	            <span class="icon-bar"></span>
 	          </a>
 	          
-	          <div class="nav-collapse collapse">
-	            <ul class="nav">
-	              <li class="active"><a href="#">Home</a></li>
-	              <li><a href="#about">About</a></li>
-	              <li><a href="#contact">Contact</a></li>
-	              <li class="dropdown">
-	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-	                <ul class="dropdown-menu">
-	                  <li><a href="#">Action</a></li>
-	                  <li><a href="#">Another action</a></li>
-	                  <li><a href="#">Something else here</a></li>
-	                  <li class="divider"></li>
-	                  <li class="nav-header">Nav header</li>
-	                  <li><a href="#">Separated link</a></li>
-	                  <li><a href="#">One more separated link</a></li>
-	                </ul>
-	              </li>
-	            </ul>
-	             <!-- <img src="<? echo base_url()?>_assets/bootstrap/img/tlogo.jpg" class="span2"> -->
-	            <!-- <a class="brand" href="#">CCTNS</a> -->
-	            <form class="navbar-form pull-right">
-	              <input class="span2" type="text" placeholder="Email">
-	              <input class="span2" type="password" placeholder="Password">
-	              <button type="submit" class="btn">Sign in</button>
-	            </form>
-	          </div><!--/.nav-collapse -->
+		        <div class="nav-collapse collapse">
+		            <ul class="nav">
+		              <li class="active"><a href="#">Home</a></li>
+		              <li><a href="#about">About</a></li>
+		              <li><a href="#contact">Contact</a></li>
+		              <li class="dropdown">
+		                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+		                <ul class="dropdown-menu span4">
+		                  <form class="navbar-form ">
+				              <li><input class="span3" type="text" placeholder="Email"></li>
+				              <br>
+				              <li><input class="span3" type="password" placeholder="Password"></li>
+				              <br>
+				              <li><button type="submit" class="btn">Sign in</button></li>
+		            		</form>
+		                </ul>
+		              </li>
+		            </ul>
+	            </div><!--/.nav-collapse -->
 	        </div>
 	      </div>
 	    </div>
 	    <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="container-fluid">
       	<div class="row-fluid">
-      		<div class="span9 pull-right">
+      		<div class="span3">
+	          <img src="<? echo base_url()?>_assets/bootstrap/img/tlogo.jpg">
+	          <hr class="span10">
+	        </div>
+      		<div class=" span9 ">
         		<div class="page-header">
-          			<h2> CCTNS <br><small>Crime and Criminal Tracking Network & System</small></h2>
+          			<h1> CCTNS <br><small>Crime and Criminal Tracking Network & System</small></h1>
         		</div>
         	</div>
+        	<ul class="breadcrumb span9">
+	            <li><a href="#">Home</a> <span class="divider">/</span></li>
+	            <li><a href="#">Library</a> <span class="divider">/</span></li>
+	            <li><a href="#">Library</a> <span class="divider">/</span></li>
+	            <li><a href="#">Library</a> <span class="divider">/</span></li>
+	            <li><a href="#">Library</a> <span class="divider">/</span></li>
+	            <li class="active">Data</li>
+          	</ul>
+           <hr class="span9">
+        </div>
