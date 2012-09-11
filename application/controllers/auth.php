@@ -22,6 +22,20 @@ class Auth extends CI_Controller
 		}
 	}
 
+	function layout($page)
+	{
+		// $pg=$page;
+		
+		// echo "hello";
+		// die;
+		
+		$this->load->view('templates/header');
+		$this->load->view('templates/sidebar');
+		// $this->load->view($page);
+		$this->load->view('templates/footer');
+
+	}
+
 	/**
 	 * Login user on the site
 	 *

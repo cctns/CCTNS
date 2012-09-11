@@ -77,7 +77,7 @@
         	</div>
         	<ul class="breadcrumb span9">
 	            <li><a href="#">Home</a> <span class="divider">/</span></li>
-	            <li><a href="#">Library</a> <span class="divider">/</span></li>
+	            <li><a href="<?php echo site_url();?>/auth/login">login</a> <span class="divider">/</span></li>
 	            <li><a href="#">Library</a> <span class="divider">/</span></li>
 	            <li><a href="#">Library</a> <span class="divider">/</span></li>
 	            <li><a href="#">Library</a> <span class="divider">/</span></li>
