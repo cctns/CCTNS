@@ -53,48 +53,39 @@
 		              <li class="active"><a href="#">Home</a></li>
 		              <li><a href="#about">About</a></li>
 		              <li><a href="#contact">Contact</a></li>
-		              <li class="dropdown">
-		                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-		                <ul class="dropdown-menu span4">
-		                  <form class="navbar-form ">
-				              <li><input class="span3" type="text" placeholder="Email"></li>
-				              <br>
-				              <li><input class="span3" type="password" placeholder="Password"></li>
-				              <br>
-				              <li><button type="submit" class="btn">Sign in</button></li>
-		            		</form>
-		                </ul>
-		              </li>
+		              
 		            </ul>
+		            <div class="btn-group pull-right">
+		                <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">LogIn <span class="caret"></span></button>
+		                <ul class="dropdown-menu">
+		                  <li><a href="<?php echo site_url(); ?>/auth ">User</a></li>
+		                  <li class="divider"></li>
+		                  <li><a href="#">Official</a></li>	                  
+		                </ul>
+              		</div><!-- /btn-group -->
 	            </div><!--/.nav-collapse -->
 	        </div>
 	      </div>
 	    </div>
 	    <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="container-fluid">
-      	<div class="row-fluid">
-      		<div class="span3">
-	          <img src="<?php echo base_url()?>/bootstrap/img/tlogo.jpg">
-	          <hr class="span10">
-	        </div>
-      		<div class=" span9 ">
-        		<div class="page-header">
-          			<h1> CCTNS <br><small>Crime and Criminal Tracking Network & System</small></h1>
-        		</div>
-        	</div>
-        	<ul class="breadcrumb span9">
-	            <li><a href="#">Home</a> <span class="divider">/</span></li>
-	            <li><a href="<?php echo site_url();?>/auth/login">login</a> <span class="divider">/</span></li>
-	            <li><a href="#">Library</a> <span class="divider">/</span></li>
-	            <li><a href="#">Library</a> <span class="divider">/</span></li>
-	            <li><a href="#">about us</a> <span class="divider">/</span></li>
-	            <li class="active">Data</li>
-          	</ul>
-           <hr class="span9">
-        </div>
-        <script type="text/javascript">
-        $(document).ready(function(){
-  
-  		// alert("hello");
-		});
-        </script>
+
+    	<div class="container-fluid"><!--ends in footer-->
+	      	<div class="row-fluid"><!--Header row fluid-->
+	      		<div class="span2">
+		          <img src="<?php echo base_url()?>bootstrap/img/tlogo.jpg">
+		        </div>
+	      		<div class=" span10 pull-right">
+	        		<div class="page-header">
+	          			<h1> CCTNS <br><small>Crime and Criminal Tracking Network & System</small></h1>
+	        		</div>
+	        		<ul class="breadcrumb">
+			            <li><a href="#">Home</a> <span class="divider">/</span></li>
+			            <li><a href="<?php echo site_url();?>/auth/login">login</a> <span class="divider">/</span></li>
+			            <li><a href="#">Library</a> <span class="divider">/</span></li>
+			            <li><a href="#">Library</a> <span class="divider">/</span></li>
+			            <li><a href="#">Library</a> <span class="divider">/</span></li>
+			            <li class="active">Data</li>
+	          		</ul>
+	        	</div>  
+	        </div><!--Header row fluid end-->
+	        <hr>

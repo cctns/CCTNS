@@ -19,11 +19,11 @@ class Auth extends CI_Controller
 		if ($message = $this->session->flashdata('message')) {
 			$this->load->view('auth/general_message', array('message' => $message));
 		} else {
-			redirect('/auth/login/');
+			redirect('auth/login');
 		}
 	}
 
-	
+
 
 	/**
 	 * Login user on the site
@@ -95,7 +95,11 @@ class Auth extends CI_Controller
 					$data['captcha_html'] = $this->_create_captcha();
 				}
 			}
+
+			
+
 			$this->layout->show('auth/login_form', $data);
+
 		}
 	}
 
