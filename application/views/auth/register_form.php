@@ -9,7 +9,7 @@
 			'value' => set_value('username'),
 			'maxlength'	=> $this->config->item('username_max_length', 'tank_auth'),
 			'size'	=> 30,
-			'class' => 'control-label',
+			
 			
 		);
 	}
@@ -71,7 +71,7 @@
 		<legend>Register !</legend>
 			 <?php if ($use_username) { ?>
 			<div class="control-group">
-				<?php echo form_label('Username', $username['id'],$username);?>
+				<?php echo form_label('Username', $username['id'],$label);?>
 				<div class="controls"> 
 					 <?php echo form_input($username); 
 					 echo form_error($username['name']); 
