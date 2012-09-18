@@ -39,6 +39,9 @@ class Cctns extends CI_Controller
 		$this->layout->show('welcome');
 
 	}
+	function FIR(){
+		$this->layout->show('pages/FIR_form');
+	}
 }
 
 /* End of file welcome.php */
