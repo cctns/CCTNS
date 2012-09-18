@@ -26,7 +26,9 @@ class Cctns extends CI_Controller
 		// 	$data['username']	= $this->tank_auth->get_username();
 		// 	$this->load->view('welcome', $data);
 		// }
+
 	$this->layout->show('pages/index');	
+
 				
 	}
 	function login(){
