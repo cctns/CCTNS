@@ -96,7 +96,7 @@ class Auth extends CI_Controller
 				}
 			}
 
-			
+
 
 			$this->layout->show('auth/login_form', $data);
 
@@ -115,6 +115,7 @@ class Auth extends CI_Controller
 		$this->_show_message($this->lang->line('auth_message_logged_out'));
 		$page="layout";
 		$this->layout($page);
+		// $this->layout->show('auth/login_form', $data);
 	}
 
 	/**
@@ -197,7 +198,7 @@ class Auth extends CI_Controller
 			$data['use_username'] = $use_username;
 			$data['captcha_registration'] = $captcha_registration;
 			$data['use_recaptcha'] = $use_recaptcha;
-			$this->load->view('auth/register_form', $data);
+			$this->layout->show('auth/register_form', $data);
 		}
 	}
 

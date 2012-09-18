@@ -1,3 +1,4 @@
+        </div><!-- row-fluid started in sidebar -->
         </div><!-- container-fluid -->
         <hr>
         <footer class="pull-right">
