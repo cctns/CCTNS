@@ -48,8 +48,10 @@ $config['use_username'] = TRUE;
 
 $config['username_min_length'] = 4;
 $config['username_max_length'] = 20;
-$config['password_min_length'] = 4;
+$config['password_min_length'] = 8;
 $config['password_max_length'] = 20;
+$config['phone_length'] = 10;
+
 
 /*
 |--------------------------------------------------------------------------

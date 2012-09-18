@@ -1,5 +1,5 @@
 
-        <div class="row-fluid "><!--ends in the page-->
+        <div class="row-fluid "><!--ends in the footer-->
         	<div class="span2">
 	        	<div class="span10">
 			        <ul class=" nav nav-pills nav-stacked">

@@ -96,7 +96,7 @@ class Auth extends CI_Controller
 				}
 			}
 
-			
+
 
 			$this->layout->show('auth/login_form', $data);
 
