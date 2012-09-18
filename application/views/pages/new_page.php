@@ -1,4 +1,4 @@
-<div class="span10">
+<div class="span9">
 
 <h1>This is a new page file  :)) </h1>
 
