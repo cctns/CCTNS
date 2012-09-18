@@ -293,7 +293,7 @@ class Auth extends CI_Controller
 					foreach ($errors as $k => $v)	$data['errors'][$k] = $this->lang->line($v);
 				}
 			}
-			$this->load->view('auth/forgot_password_form', $data);
+			$this->layout->show('auth/forgot_password_form', $data);
 		}
 	}
 

@@ -68,7 +68,7 @@
 		'class' => 'control-label'
 	);
 		echo form_open($this->uri->uri_string(),$form); ?>
-		<legend>Register !</legend>
+		<legend>Register here !</legend>
 			 <?php if ($use_username) { ?>
 			<div class="control-group">
 				<?php echo form_label('Username', $username['id'],$label);?>
