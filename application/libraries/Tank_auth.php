@@ -159,7 +159,7 @@ class Tank_auth
 	 * @param	bool
 	 * @return	array
 	 */
-	function create_user($username, $email, $password, $email_activation)
+	function create_user($username, $email, $password, $phone, $address,$email_activation)
 	{
 		if ((strlen($username) > 0) AND !$this->ci->users->is_username_available($username)) {
 			$this->error = array('username' => 'auth_username_in_use');
@@ -173,13 +173,16 @@ class Tank_auth
 					$this->ci->config->item('phpass_hash_strength', 'tank_auth'),
 					$this->ci->config->item('phpass_hash_portable', 'tank_auth'));
 			$hashed_password = $hasher->HashPassword($password);
-
+			
 			$data = array(
 				'username'	=> $username,
 				'password'	=> $hashed_password,
 				'email'		=> $email,
+				'phone'     => $phone,
+				'address'   => $address,
 				'last_ip'	=> $this->ci->input->ip_address(),
 			);
+			
 
 			if ($email_activation) {
 				$data['new_email_key'] = md5(rand().microtime());

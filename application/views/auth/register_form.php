@@ -42,13 +42,12 @@
 		'maxlength'	=> 8,
 	);
 	$phone = array(
-		'id' => 'prependedInput' ,
+		'id' => 'phone' ,
 		'name' => 'phone' ,
 		'size' => 16,
 		'value'=>set_value('phone'),
 		'type'=>'text',
-		'maxlength' => 10 ,
-		
+		'maxlength' => 15
 		 );
 	$address=array(
 		'id'=>'address',
@@ -106,7 +105,7 @@
 				<?php echo form_label('Phone', $phone['id'],$label); ?>
 				<div class="controls"> 
 					<?php echo form_input($phone); 
-					 echo form_error($confirm_password['name']);?> 
+					 echo form_error($phone['name']);?> 
 				</div>
 			</div>
 			<div class="control-group">
